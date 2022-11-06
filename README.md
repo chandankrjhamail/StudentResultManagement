@@ -47,11 +47,14 @@ There are APIs related to student and result have been exposed to perform the op
         .and(RequestPredicates.accept(MediaType.APPLICATION_JSON)), studentManagementHandler::saveResult)
 .andRoute(RequestPredicates.GET("/students/result/{rollNumber}")
 
+![image](https://user-images.githubusercontent.com/63060197/200158300-ee9032b8-8b52-48cc-aaf6-a004ae51effd.png)
+
 
 ## Database Design:
 
 MongoDB used to store the student and result data.
 Two collections namely, Student and Result have been created with below fields:
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -80,18 +83,8 @@ public class Result {
     private String _id;
     @NonNull
     private int totalMarks;
-    @NonNull
-    private int obtainedMarks;
-    @NonNull
-    private int rollNumber;
-    private int grade;
-    private String remarks;
-    private int positionInClass;
-    private Instant createdOn;
-    private Instant updatedOn;
-    private Object test;
+![image](https://user-images.githubusercontent.com/63060197/200158316-86989c44-5416-4d3c-a122-36e80da8039e.png)
 
-}
 
 
 ## Security:
