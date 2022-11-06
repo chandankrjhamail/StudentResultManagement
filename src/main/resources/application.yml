@@ -1,0 +1,7 @@
+mongodb:
+    database: resultManagement
+
+server:
+    error:
+        include-message: always
+
