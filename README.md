@@ -26,15 +26,9 @@ send the appropriate response message on the websocket.
 
 ## High Level Design:
 
+
+ ![image](https://user-images.githubusercontent.com/63060197/200158254-5760ea2b-dae5-46ee-8c7f-84a27ad72247.png)
  
-
-
-
-
-
-
-
-
 
 
 ## API Design:
@@ -107,4 +101,3 @@ JWT authentication and authorization have been used for verification. Although I
 ## Websocket API:
 
 There is WebSocket API which will open a channel which will take the result data and using sink it will publish the data so that the result data can be subscribe by client.
-![image](https://user-images.githubusercontent.com/63060197/200158169-7df0f5ff-b3ca-4f27-9fa0-24d3d33c040d.png)
